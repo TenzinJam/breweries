@@ -5,16 +5,14 @@ import ReactLoading from 'react-loading'
 function Brewery(){
   const [brewery, setBrewery] = useState(null)
   const { id } = useParams()
-  console.log("id", id)
 
   useEffect(() => {
-    console.log("hello")
-    fetch(`https://api.openbrewerydb.org/breweries/${id}`)
-     .then(res => res.json())
-      .then(result => {
-        setBrewery(result)
-      })
-    console.log(brewery)
+    async function fetchData(){
+      let res = await fetch(`https://api.openbrewerydb.org/breweries/${id}`)
+      res = await res.json()
+      setBrewery(res)
+    }
+    fetchData()
   }, [])
 
   return (

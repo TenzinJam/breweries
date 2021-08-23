@@ -23,14 +23,11 @@ class BreweryList extends Component {
     navigator.geolocation.getCurrentPosition(async (position) => {
           latitude = position.coords.latitude
           longitude = position.coords.longitude
-          console.log(latitude, longitude)
           let data = await fetch(`https://api.openbrewerydb.org/breweries?by_dist=${latitude},${longitude}&per_page=50`)
           let breweries = await data.json()
-          console.log(breweries)
           this.setState( {list: breweries} )
           this.setState({loading: !this.state.loading})
         })
-    console.log(this.state.latitude)
   }
 
   render() {
