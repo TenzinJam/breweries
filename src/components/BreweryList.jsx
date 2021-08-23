@@ -1,16 +1,19 @@
 import React, { Component } from 'react';
+import ReactLoading from 'react-loading'
 
 class BreweryList extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      list: []
+      list: [],
+      loading: true
      };
      this.fetchData = this.fetchData.bind(this)
   }
 
   componentDidMount(){
     this.fetchData()
+
   }
 
   fetchData () {
@@ -24,6 +27,7 @@ class BreweryList extends Component {
           let breweries = await data.json()
           console.log(breweries)
           this.setState( {list: breweries} )
+          this.setState({loading: !this.state.loading})
         })
     console.log(this.state.latitude)
   }
@@ -35,12 +39,11 @@ class BreweryList extends Component {
   render() {
     return (
       <div>
-        <h1>Welcome to Elixir</h1>
-        <img src="https://heltonbrewing.com/wp-content/uploads/2015/07/Brewery.jpg" alt="stockImage" />
-        <button>Breweries Near You!!</button>
-        <ol>{this.state.list.map(brewery => <li key={brewery.id}>
-          <a href={brewery.website_url}>{brewery.name}</a>, {brewery.brewery_type},{this.compileAddress(brewery)}</li>)}
-        </ol>
+        {this.state.loading ?
+          (<ReactLoading type="spinningBubbles" color="#FFD700" height={700} width={300}/>):
+          (<ol>{this.state.list.map(brewery => <li key={brewery.id}><a href={brewery.website_url} style={{ textDecoration: 'none' }} target="_blank" rel="noreferrer noopener">{brewery.name}</a>, {brewery.brewery_type},{this.compileAddress(brewery)}</li>)}
+          </ol>)
+        }
       </div>
     );
   }
