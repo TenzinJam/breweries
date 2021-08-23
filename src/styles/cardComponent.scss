@@ -1,0 +1,21 @@
+$white: #fff;
+$black: #000;
+
+.card{
+  margin: 10px;
+  padding: 2em;
+  border-radius: 1em;
+  border: 1px solid transparentize($white, 0.5);
+  text-shadow: 0 0 1em transparentize($black, 0.5);
+  background: transparentize($white, 0.8);
+  backdrop-filter: blur(20px);
+  transform: perspective(500px);
+  transform-style: preserve-3d;
+}
+
+#Link{
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: white
+}

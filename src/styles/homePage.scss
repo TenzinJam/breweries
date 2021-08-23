@@ -5,6 +5,10 @@
   transform: translate(-50%, -50%);
 }
 
+nav{
+  display: flex;
+  justify-content: space-around;
+}
 body{
   background-image: url("../assets/breweryImage.jpeg");
   width: 100%;

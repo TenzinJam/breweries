@@ -1,0 +1,22 @@
+.card {
+  margin: 10px;
+  padding: 2em;
+  border-radius: 1em;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  text-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  -webkit-transform: perspective(500px);
+          transform: perspective(500px);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+#Link {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+/*# sourceMappingURL=cardComponent.css.map */

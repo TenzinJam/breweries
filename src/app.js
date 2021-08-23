@@ -9,7 +9,7 @@ function App(){
       <Router>
         <div>
           <nav>
-            <Link to="/" style={{ textDecoration: 'none' }}>Home</Link>
+            <Link to="/" style={{ textDecoration: 'none'}}>Home</Link>
           </nav>
           <Switch>
             <Route path="/breweryList" exact component={BreweryList}/>

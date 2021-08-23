@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import ReactLoading from 'react-loading'
+import '../styles/breweryList.css'
+import CardComponent from './CardComponent';
 
 class BreweryList extends Component {
   constructor(props) {
@@ -32,17 +34,12 @@ class BreweryList extends Component {
     console.log(this.state.latitude)
   }
 
-  compileAddress(item){
-    return `${item.street}, ${item.city}, ${item.state}, ${item.postal_code}`
-  }
-
   render() {
     return (
       <div>
         {this.state.loading ?
-          (<ReactLoading type="spinningBubbles" color="#FFD700" height={700} width={300}/>):
-          (<ol>{this.state.list.map(brewery => <li key={brewery.id}><a href={brewery.website_url} style={{ textDecoration: 'none' }} target="_blank" rel="noreferrer noopener">{brewery.name}</a>, {brewery.brewery_type},{this.compileAddress(brewery)}</li>)}
-          </ol>)
+          (<ReactLoading type="spinningBubbles" color="" height={70} width={300}/>):
+          (<ul>{this.state.list.map(brewery => (<li><CardComponent key={brewery.id} props={brewery}/></li>))}</ul>)
         }
       </div>
     );

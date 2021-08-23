@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAEA,AAAA,EAAE,CAAA;EACA,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,YAAY;EAC7B,SAAS,EAAE,IAAI;EACf,eAAe,EAAE,IACnB;CAAC",
     "sources": [
         "breweryList.scss"
     ],
