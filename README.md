@@ -11,6 +11,13 @@ I highly encourage you to refer to package.json file in the root directory to ge
 
 Data is generously provided by [Open Brewery](https://www.openbrewerydb.org/) and the breweries on this app are listed by according their proximity to your location. What you are seeing when you click on "Breweries Near You" are the literally those closest to you and not a random list from the API. 
 
+## Navigating
+
+As you get to the Home page, you can see the "Breweries Near You" button. Clicking it will take you to another page that lists 50 breweries around you. You can either click on the "website" link to see a brewery's official site or the on their names to find out more about the brewery. Home button in the nav gives you the option to return to the main page whenever you want. The individual brewery page also has the "Back to List" button to see the complete list again and choose another brewery. 
+
+Google-Map-React, on production, has some glitches and does not render as well as it does locally on development. However, I recommend checking out the web app using the deployed link here: [Breweries](https://brewery-around-you.herokuapp.com/) then running it locally. 
+
+If you do wish to run it locally, there are a few steps you need to follow that are listed below. 
 
 ## Getting Started#Set up Steps
 
