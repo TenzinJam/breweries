@@ -5,7 +5,7 @@ an item from the list to view more details on that brewery.
 
 ## Description
 
-This web app was built using the Create React App scaffold because of its easy set-up and other important functionalities it provides. Backend was not incorporated to this project because of the time constraints and the potential lost of cool functionalities available through frontend API fetching. 
+This web app was built using the Create React App scaffold because of its easy set-up and other important functionalities it provides. Backend was not incorporated to this project because of the time constraints and the potential loss of cool functionalities available through frontend API fetching. 
 
 I highly encourage you to refer to package.json file in the root directory to get a better understanding of the libraries and frameworks used to build this SPA. 
 
