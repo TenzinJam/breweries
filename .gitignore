@@ -6,7 +6,7 @@
 .pnp.js
 # testing
 /coverage
-/src/config/key.js
+/src
 # production
 /build
 
