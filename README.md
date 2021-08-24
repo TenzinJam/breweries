@@ -30,7 +30,10 @@ $ cd breweries
 ```
 $ code .
 ```
-* Once you have your code editor open, $ npm install 
+* Once you have your code editor open, and run 
+```
+$ npm install 
+```
 
 ### Dependencies and Installing
 
