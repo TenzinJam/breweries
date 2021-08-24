@@ -5,11 +5,11 @@ an item from the list to view more details on that brewery.
 
 ## Description
 
-This web app was build using the Create React App scaffold because of its easy set up and other important functionalities it provides. Backend was not incorporated to this project because of time constraints and the potential lost of cool functionalities available through frontend API fetching provided. 
+This web app was built using the Create React App scaffold because of its easy set-up and other important functionalities it provides. Backend was not incorporated to this project because of the time constraints and the potential lost of cool functionalities available through frontend API fetching. 
 
 I highly encourage you to refer to package.json file in the root directory to get a better understanding of the libraries and frameworks used to build this SPA. 
 
-Data is generously provided by [Open Brewery](https://www.openbrewerydb.org/) and the breweries on this app is listed by according their proximity to your location. What you are seeing when you click on "Breweries Near You" are the literally those closest to you and not a random list from the API. 
+Data is generously provided by [Open Brewery](https://www.openbrewerydb.org/) and the breweries on this app are listed by according their proximity to your location. What you are seeing when you click on "Breweries Near You" are the literally those closest to you and not a random list from the API. 
 
 
 ## Getting Started#Set up Steps
@@ -36,8 +36,10 @@ $ code .
 ```
 npm start
 ```
-* If the tab does not open automatically, hit http://localhost:3000/
-disclaimer: You'd need an API key to see some of the components if you want to run the program locally. For security purposes, I recommend checking out the deployed site [Breweries Around you](https://brewery-around-you.herokuapp.com/). 
+* If a tab does not open automatically, hit http://localhost:3000/
+
+
+Disclaimer: You'd need an API key to see some of the components if you want to run the program locally. For security purposes, I recommend checking out the deployed site [Breweries Around you](https://brewery-around-you.herokuapp.com/). 
 
 ## Tech Stack
 * Javascript
