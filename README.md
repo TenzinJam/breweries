@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# AndCulture Mini Coding Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Build a single page application using React to display a list of breweries with the ability to click on
+an item from the list to view more details on that brewery.
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+This web app was build using the Create React App scaffold because of its easy set up and other important functionalities it provides. Backend was not incorporated to this project because of time constraints and the potential lost of cool functionalities available through frontend API fetching provided. 
 
-### `yarn start`
+I highly encourage you to refer to package.json file in the root directory to get a better understanding of the libraries and frameworks used to build this SPA. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Data is generously provided by [Open Brewery](https://www.openbrewerydb.org/) and the breweries on this app is listed by according their proximity to your location. What you are seeing when you click on "Breweries Near You" are the literally those closest to you and not a random list from the API. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
+## Getting Started#Set up Steps
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Fork the repository and clone it onto your local machine: 
+[how-to-clone-repo](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository)
+* Run the following commands in the terminal:    
+```
+$ cd breweries    
+```
+```
+$ code .
+```
+* Once you have your code editor open, $ npm install 
 
-### `yarn build`
+### Dependencies and Installing
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Foundational Dependencies include react, react-dom and node-Sass. For full list of dependencies and dev dependencies, please clone the file and refer to it's package.json file in the root directory. 
+* Once you "$ npm install", these dependencies and dev dependencies will be installed without you having to do so individually. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Executing program
+* Run npm start (all commands and stripts are in package.json file under "scripts")
+```
+npm start
+```
+* If the tab does not open automatically, hit http://localhost:3000/
+disclaimer: You'd need an API key to see some of the components if you want to run the program locally. For security purposes, I recommend checking out the deployed site [Breweries Around you](https://brewery-around-you.herokuapp.com/). 
 
-### `yarn eject`
+## Tech Stack
+* Javascript
+* React.js
+* Sass
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Authors
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Name: Tenzin Jamyang
+* Email: jamyangu@gmail.com
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## License
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+MIT license
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
