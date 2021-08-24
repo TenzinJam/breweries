@@ -9,7 +9,7 @@ import '../styles/brewery.css'
 
 Brewery.defaultProps = {
   center: {lat: 40.73, lng: -73.93},
-  zoom: 10
+  zoom: 8
 }
 
 function Marker(){
