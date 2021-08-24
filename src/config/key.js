@@ -1,4 +1,4 @@
 
 export default {
-  apiKey: "AIzaSyAEOkJUIzMA0snVbjf4L0MCHi06OgeHxCA"
+  apiKey: "AIzaSyCZeL9a8GJyi0oVxUn4WS16GG7t-lEhQ8o"
 }

@@ -56,7 +56,7 @@ function Brewery(props){
       </div>
       <div style={{ height: '50vh', width: '50%', marginLeft: '40px'}}>
         {brewery && (<GoogleMapReact
-          bootstrapURLKeys={{ key: key.apiKey }}
+          bootstrapURLKeys={{ key: process.env.API_KEY }}
           defaultCenter={props.center}
           center={{ lat: latitude, lng: longitude}}
           defaultZoom={props.zoom}
