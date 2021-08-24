@@ -4,6 +4,8 @@ import ReactLoading from 'react-loading'
 import GoogleMapReact from 'google-map-react'
 import key from '../config/key'
 import { FiMapPin } from 'react-icons/fi'
+import { Link } from 'react-router-dom'
+import '../styles/brewery.css'
 
 Brewery.defaultProps = {
   center: {lat: 40.73, lng: -73.93},
@@ -41,14 +43,19 @@ function Brewery(props){
   }, [id])
 
   return (
-    <div style={{ height: '50vh', width: '50%', marginTop: '10px', marginLeft: '40px'}}>
+    <div>
+      <nav style={ {flex: 'display', justifyContent: 'space-around' } }>
+        <Link to="/breweryList" style={{ textDecoration: 'none', left:'100px'}}>Back to List</Link>
+      </nav>
       <div>{brewery ?
-      (<div>
-        <h1>{brewery.name}</h1>
-        <h3>Address: {brewery.street}, {brewery.city}, {brewery.state}, {brewery.postal_code}</h3>
-      </div>)
-      : <ReactLoading type="spinningBubbles" color="" height={70} width={300}/>}</div>
-      {brewery && (<GoogleMapReact
+        (<div >
+          <h1 className="card">{brewery.name}</h1>
+          <h4 style={{ paddingLeft: '40px'}}>Address:{brewery.street}, {brewery.city}, {brewery.state}, {brewery.postal_code}</h4>
+        </div>)
+      : <ReactLoading type="spinningBubbles" color="" height={70} width={300}/>}
+      </div>
+      <div style={{ height: '50vh', width: '50%', marginLeft: '40px'}}>
+        {brewery && (<GoogleMapReact
           bootstrapURLKeys={{ key: key.apiKey }}
           defaultCenter={props.center}
           center={{ lat: latitude, lng: longitude}}
@@ -62,6 +69,8 @@ function Brewery(props){
             text={brewery && brewery.name}
           />
         </GoogleMapReact>)}
+      </div>
+
     </div>
   )
 }

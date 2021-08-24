@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,KAAK,CAAA;EACH,MAAM,EAAE,GAAG;EACX,OAAO,EAAE,GAAG;EACZ,aAAa,EAAE,GAAG;EAClB,MAAM,EAAE,GAAG,CAAC,KAAK,CAAC,wBAA2B;EAC7C,WAAW,EAAE,CAAC,CAAC,CAAC,CAAC,GAAG,CAAC,kBAA2B;EAChD,UAAU,EAAE,wBAA2B;EACvC,eAAe,EAAE,UAAU;EAC3B,SAAS,EAAE,kBAAkB;EAC7B,eAAe,EAAE,WAAW;CAC7B",
+    "sources": [
+        "brewery.scss"
+    ],
+    "names": [],
+    "file": "brewery.css"
+}
